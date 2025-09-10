@@ -21,6 +21,7 @@ header {
     width: 100%;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
@@ -51,4 +52,12 @@ header:hover h1 {
 
 header:hover .bg {
     filter: blur(0);
+}
+
+button {
+    transition: transform 0.3s ease-in;
+}
+
+button:hover {
+    transform: scale(1.5);
 }
