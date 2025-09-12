@@ -2,62 +2,28 @@
     box-sizing: border-box;
 }
 
-.btn {
-    background-color: green;
-    border-radius: 15px;
-    color: white;
-    transition: background-color 0.3s linear;
-    transition: box-shadow 0.3s ease-in 0.5s;
-}
-
-.btn:hover {
-    background-color: lightgreen;
-    box-shadow: darkgreen 2px 2px 5px;
-}
-
-header {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    background-size: cover;
+section {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 30px;
+    gap: 10px;
 }
 
-.bg {
-    background-color: beige;
-    background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg");
-    background-size: cover;
-    filter: blur(3px);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    transition: filer 1s ease-in;
+p {
+    background-color: lightgreen;
+    padding: 20px;
 }
 
-h1 {
-    transition: filter 1s ease-in;
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+
+    p {
+        padding: 40px;
+    }
 }
 
-header:hover h1 {
-    filter: blur(1px);
-}
-
-header:hover .bg {
-    filter: blur(0);
-}
-
-button {
-    transition: transform 0.3s ease-in;
-}
-
-button:hover {
-    transform: scale(1.5);
+@media screen and (max-width: 400px) {
+    p {
+        padding: 30px;
+    }
 }
